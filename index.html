@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parlay Odds Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        .matchup {
+            margin-bottom: 20px;
+        }
+        .row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .row input[type="text"] {
+            width: 80px;
+            padding: 5px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4caf50;
+            color: white;
+            text-align: center;
+            cursor: pointer;
+            margin: 10px 5px;
+        }
+        .button.clear {
+            background-color: #f44336;
+        }
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Parlay Odds Calculator</h1>
+
+    <div id="matchup-container"></div>
+
+    <div class="button" onclick="calculateParlay()">Calculate Parlay</div>
+    <div class="button clear" onclick="clearForm()">Clear Form</div>
+
+    <p id="result"></p>
+</div>
+
+<!-- Link to the JavaScript logic -->
+<script src="parlay.js"></script>
+
+</body>
+</html>
